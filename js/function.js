@@ -29,7 +29,7 @@ function creteItem(todo) {
             <input id=input type="checkbox" ${isChecked? 'checked':""}>
           </div>
           <div id="info">
-            <b style = "text-decoration: ${isChecked? 'line-through': 'none'}"> ${todo.name}</b><br>
+            <b style = "text-decoration: ${isChecked? 'line-through': ''}"> ${todo.name}</b><br>
             <b> ${todo.time}</b>
           </div>
     </div>

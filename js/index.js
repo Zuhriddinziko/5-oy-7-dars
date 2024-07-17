@@ -69,8 +69,27 @@ document.addEventListener('DOMContentLoaded', function(){
         })
     })
     let chik = document.querySelectorAll('#input');
-    
- 
+    let info =document.querySelectorAll('#info')
+    console.log(info);
+    chik.forEach(function(el){
+        let idText=el.id;
+        
+        // let chikked = this.value;
+        console.log(idText);
+        el.addEventListener('click',function(event){
+            event.preventDefault;
+
+            let todo=getDate();
+            // console.log(todo.parentNode);
+            
+            let bajardim=alert('siz bajarib bo`ldingizmi');
+            if(bajardim){
+             this.parentNode.nextSibling.remove()
+            //  console.log(ak);
+            }
+
+        })
+    })
     // chik&&chik.forEach(function(el){
     //     // console.log(el);
     //     el.addEventListener('ch')
