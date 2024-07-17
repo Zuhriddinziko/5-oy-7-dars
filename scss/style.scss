@@ -1,0 +1,197 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #EEF2F6;
+}
+
+.todo_list {
+    width: 900px;
+    margin: 40px auto;
+    background-color: #66dde8;
+    border-radius: 12px;
+    border: 5px solid #dbbd9b;
+    padding: 30px;
+    #input{cursor: pointer;}
+
+    h1 {
+        font-size: 50px;
+        color: #ec8925;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .hour {
+        display: inline-block;
+        width: 100%;
+        // text-align: center;
+        padding-right: 50px;
+        height: 40px;
+        background-color: #1ac82e;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        align-items: center;
+        padding: 5px;
+
+        .one {
+            color: #41362a;
+            font-size: 20px;
+        }
+
+        .tru {
+            color: red;
+            font-size: 20px;
+
+        }
+    }
+
+    #buttons {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+        #btn {
+            width: 80px;
+            height: 30px;
+            border: none;
+            background-color: rgb(91, 45, 228);
+            border-radius: 5px;
+            color: white;
+            font-size: 12px;
+            border: 2px solid #ec8925;
+            cursor: pointer;
+            transition: all 0.5s;
+
+        }
+
+        #btn:hover {
+            color: #18494d;
+            background-color: #ec8925;
+
+        }
+
+        #filter {
+            width: 80px;
+            height: 30px;
+            background-color: rgb(91, 45, 228);
+            border-radius: 5px;
+            border: none;
+            color: white;
+            font-size: 12px;
+            border: 2px solid #ec8925;
+            cursor: pointer;
+
+            // :hover{
+            //     background-color: rgb(159, 134, 231);
+
+            transition: all 0.5s;
+        }
+
+        #filter:hover {
+            color: #18494d;
+            background-color: #ec8925;
+        }
+    }
+
+    #wrapper {
+        // background-color: #9fc4ea;
+        background-color: #40584c;
+
+        padding: 15px;
+        border-radius: 8px;
+    }
+
+    #form {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+
+        input {
+            // margin: 20px;
+            width: 440px;
+            height: 30px;
+            border: 2px solid #ec8925;
+            border-radius: 6px;
+            background-color: #9de3c0;
+        }
+
+    }
+
+    .dete {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        border: 5px solid #087315;
+        border-radius: 10px;
+        // background-color: #1ac82e;
+    background-color: #66dde8;
+     transition: all 0.5s;
+        cursor: pointer;
+        margin-top: 10px;
+        padding: 10px;
+
+        #chekid {
+            cursor: pointer;
+
+            #chek {
+                cursor: pointer;
+            }
+        }
+
+        #delete {
+            display: flex;
+            gap: 10px;
+        }
+
+        #todo_time {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+
+            input {
+                background-color: #e8800a;
+                border-color: red;
+            }
+
+            #info {
+                color: #070509;
+            }
+        }
+    }
+    .dete:hover{
+        background-color: #13521a;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        border: 5px solid #73082a;
+        border-radius: 20px;
+        background-color: #c81ab9;
+        cursor: pointer;
+        margin-top: 10px;
+        padding: 10px;
+        color: white;
+        font-size: 17px;
+        
+    }
+}
+#deletey:hover{
+    color: red;
+}
+#edit:hover{
+    color: red;
+}
